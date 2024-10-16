@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <h1 class="cyber-h">CyberTalks</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <img id="faceImage" src="/assets/EyesOpenMouthClosed.png" alt="Eyes" style="width: 400px; height: 450px;" />
+        </div>
+        <div class="col-md-8">
+            <div class="p-3 cyberpunk-tile-big fg-dark bg-cyan" id="speechBubble">
+                <p class="cyber-text"id="typedText"></p>
+            </div>
+
+            @* <button id="actionButton" class="" asp-controller="Home" asp-action="News" >NEWS</button> *@
+            <a id="actionButton" class="navbar-link cyber-button-big" asp-area="" asp-controller="Home" asp-action="News">NEWS</a>
+        </div>
+        
+
+        
+    </div>
+    
+</div>
+
+<style>
+    .cyber-text {
+        font-family: 'Oxanium';
+    }
+</style>
+
+
+<script src="js/site.js"></script>
